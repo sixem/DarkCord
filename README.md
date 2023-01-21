@@ -2,7 +2,7 @@
 
 # About
 
-DarkCord is a dark Discord theme which overrides many of the default color schemes of the default dark theme, making it even darker and more vibrant, while also keeping much of the simplistic look of the default theme. The theme does not use custom icons, animations or anything similar that may potentially affect the performance, all it does is change the styling of various elements.
+DarkCord is a dark Discord theme which overrides many of the default color schemes of the default dark theme, making it even darker and more vibrant :sparkles:, while also keeping much of the simplistic look of the default theme. The theme does not use custom icons, animations or anything similar that may potentially affect the performance, all it does is change the styling of various elements.
 
 :grey_exclamation: To be clear: This is meant to be used with the __dark mode__ of Discord. It *does not* work with the light mode.
 
