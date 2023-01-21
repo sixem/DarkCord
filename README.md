@@ -8,6 +8,8 @@ To be clear: This is meant to be used with the __dark mode__ of Discord. It *doe
 
 # Installation
 
+[BetterDiscord](https://betterdiscord.app/) is required to use this theme.
+
 1. Download [DarkCord.theme.css](https://sixem.github.io/DarkCord/theme/DarkCord.theme.css)
 2. Place the file in your themes folder (usually it's `%AppData%/Roaming/BetterDiscord/themes/`)
 3. Find `Themes` under the BetterDiscord settings and enable the theme
