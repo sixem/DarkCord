@@ -1,0 +1,286 @@
+/** Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+body
+{
+    /** Default font */
+    --font-primary: 'Source Sans Pro', sans-serif;
+}
+
+/** Overrides default dark theme variables */
+.theme-dark
+{
+    /** Header (text) colors */
+    --header-primary: var(--dd-primary-color);
+    --header-secondary: var(--dd-secondary-color);
+
+    /** Core background styling */
+    --background-primary: var(--dd-background-primary);
+    --background-secondary: var(--dd-background-secondary);
+    --background-secondary-alt: var(--dd-background-secondary-alt);
+    --background-tertiary: var(--dd-background-tertiary);
+
+    /** Floating colors */
+    --background-accent: var(--dd-background-accent);
+    --background-floating: var(--dd-background-floating);
+    --background-nested-floating: var(--dd-background-nested-floating);
+
+    /** Message mentioned colors */
+    --background-mentioned: var(--dd-background-mentioned);
+    --background-mentioned-hover: var(--dd-background-mentioned-hover);
+
+    /** Chat colors */
+    --chat-background: var(--dd-chat-background);
+    --chat-border: var(--dd-chat-border);
+    --chat-input-container-background: var(--dd-chat-input-container-background);
+    
+    /** Selection colors */
+    --background-modifier-hover: var(--dd-background-modifier-hover);
+    --background-modifier-active: var(--dd-background-modifier-active);
+    --background-modifier-selected: var(--dd-background-modifier-selected);
+    --background-modifier-accent: var(--dd-background-modifier-accent);
+
+    /** Message hover color */
+    --background-message-hover: var(--dd-background-message-hover);
+
+    /** Secondary buttons */
+    --button-secondary-background: var(--dd-button-main-color);
+    --button-secondary-background-hover: var(--dd-button-main-color-active);
+    --button-secondary-background-active: var(--dd-button-main-color-active);
+    --button-secondary-background-disabled: var(--dd-button-disabled-color);
+
+    /** Danger buttons */
+    --button-outline-danger-text: var(--dd-button-outline-danger-text);
+    --button-outline-danger-text-hover: var(--dd-button-outline-danger-text-hover);
+    --button-outline-danger-text-active: var(--dd-button-outline-danger-text-active);
+    --button-outline-danger-border: var(--dd-button-outline-danger-border);
+    --button-outline-danger-border-hover: var(--dd-button-outline-danger-border-hover);
+    --button-outline-danger-border-active: var(--dd-button-outline-danger-border-active);
+    --button-outline-danger-background: var(--dd-button-outline-danger-background);
+    --button-outline-danger-background-hover: var(--dd-button-outline-danger-background-hover);
+    --button-outline-danger-background-active: var(--dd-button-outline-danger-background-active);
+
+    /** Danger status */
+    --status-danger: var(--dd-status-danger);
+
+    /** Link colors */
+    --text-link: var(--dd-text-link);
+    --text-link-low-saturation: var(--dd-text-link-low-saturation);
+
+    /** Popout fade colors */
+    --search-popout-option-fade: transparent;
+    --search-popout-option-fade-hover: transparent;
+
+    /** Modal colors */
+    --modal-background: var(--background-secondary-alt);
+    --modal-footer-background: var(--background-secondary-alt);
+
+    /** Text and input colors */
+    --input-background: var(--dd-text-area-background);
+    --channeltextarea-background: var(--dd-text-area-background);
+}
+
+/** Discord icon in top left corner */
+.theme-dark div[data-list-item-id="guildsnav___home"] > div:first-child
+{
+    background-color: var(--dd-discord-logo-background);
+}
+
+/** Usernames in server lists, direct messages lists etc. */
+.theme-dark div[class^="nameAndDecorators-"] > div:first-child
+{
+    font-size: 17px;
+    color: var(--dd-primary-color);
+}
+
+/** Increase `subText` font size */
+.theme-dark div[class^="subText-"]
+{
+    font-size: 110%;
+}
+
+/** Increases the font-size of the member count under private channels */
+.theme-dark a[data-list-item-id^="private-channels-"] div[class^="subtext-"]
+{
+    font-size: 14px;
+}
+
+/** Private channel headers */
+.theme-dark h2[class^="privateChannelsHeaderContainer-"]
+{
+    letter-spacing: 2px;
+}
+
+/** Message input area */
+.theme-dark form > div[class^="channelTextArea-"] > div:first-child
+{
+    border: 2px solid var(--dd-message-input-border-color);
+}
+
+/** Slowmode and typing notifications */
+.theme-dark form > div[class^="typing-"] > div
+{
+    color: var(--dd-is-typing-color);
+}
+
+/** New messages bar in top of message box */
+.theme-dark div[class^="newMessagesBar-"]
+{
+    background-color: var(--dd-new-messages-bar-background);
+    backdrop-filter: blur(var(--dd-default-blur));
+}
+
+/** Message timestamps and activitiy label below usernames */
+.theme-dark h3 > span[class^="timestamp-"] > time,
+.theme-dark div[class^="activityText-"]
+{
+    font-size: 0.8rem;
+    font-weight: italic;
+}
+
+/** Mesage timestamp */
+.theme-dark h3 > span[class^="timestamp-"] > time
+{
+    color: var(--dd-timestamp-color);
+}
+
+/** User area */
+.theme-dark div[class^="sidebar-"] > section[class^="panels-"]
+{
+    border-top: 2px solid var(--dd-default-border-color);
+}
+
+/** User area (activity panel) */
+.theme-dark div[class^="sidebar-"] > section[class^="panels-"] > div:first-child
+{
+    border-bottom: 2px solid var(--dd-default-border-color);
+}
+
+/** User area #ID display */
+.theme-dark div[class^="nameTag-"] > div[class*="subtext-"]
+{
+    letter-spacing: 2px;
+    color: var(--dd-secondary-color);
+    font-weight: bold;
+}
+
+/** Left side bar unread container */
+.theme-dark div[class^="unreadTop"] > div:nth-child(1)
+{
+    background-color: var(--dd-sidebar-unread-messages-background);
+    backdrop-filter: blur(var(--dd-default-blur));
+    opacity: 1;
+}
+
+/** Embed wrapper (shared images, videos, URLs etc.) */
+.theme-dark article[class^="embedWrapper-"]
+{
+    background-color: var(--dd-embed-background);
+    border-color: var(--dd-embed-border-color);
+    margin-top: 0px;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+}
+/** Message react buttons */
+.theme-dark div[id^="message-accessories-"]
+{
+    padding-top: .65rem;
+}
+
+/** Hides the default Discord title */
+.theme-dark div[class*="titleBar-"] div:first-of-type > svg
+{
+    display: none;
+}
+
+/** Adds a new title text */
+.theme-dark div#app-mount::before
+{
+    content: 'DarkCord';
+    position: fixed;
+    top: 4px;
+    left: 12px;
+    color: var(--dd-titlebar-label-color);
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 1;
+}
+
+/** Jump to present container */
+.theme-dark main > div[class^="messagesWrapper-"] div[class^="jumpToPresentBar-"]
+{
+    border-radius: 8px;
+    padding: 2px;
+}
+
+/** Code blocks */
+.theme-dark pre > code
+{
+    border-radius: 0px !important;
+    background-color: var(--dd-embed-background) !important;
+    border-left: 3px solid var(--dd-code-border-color) !important;
+}
+
+/** Left server side list container */
+.theme-dark nav[class*="guilds-"]
+{
+    border-right: 2px solid var(--dd-default-border-color);
+}
+
+/** Reaction buttons */
+.theme-dark div[class^="reaction-"]
+{
+    background-color: var(--dd-reaction-button-background);
+}
+
+/** Reaction buttons (hover state) */
+.theme-dark div[class^="reaction-"]:hover
+{
+    background-color: var(--dd-reaction-button-background-hover);
+    border-color: transparent;
+}
+
+/** Adds padding to attachment names */
+.theme-dark div[class^="embedWrapper-"] span[class*="attachmentName-"]
+{
+    padding: 0px 10px;
+}
+
+/** Home and browse channels*/
+.theme-dark div[class^="chat-"][class*="background-"],
+.theme-dark div[class^="chat-"] > div[class^="content-"] > div[class^="chat-"],
+.theme-dark div[class^="chat-"] > section
+{
+    background-color: var(--dd-alt-background);
+}
+
+/** Home and browse top bars*/
+.theme-dark div[class^="chat-"] > section > div:first-child::after
+{
+    background: transparent;
+}
+
+/** People list item (friends list overview etc.) */
+.theme-dark div[class^="peopleList-"] > div:first-child > div
+{
+    border-top: 1px solid var(--dd-user-separator-color);
+}
+
+/** Message item */
+.theme-dark li > div[class^="message-"]
+{
+    border-left: 2px solid transparent;
+}
+
+/** Message item (hover state) */
+.theme-dark li > div[class^="message-"]:hover
+{
+    border-left: 2px solid var(--dd-message-hover-background);
+}
+
+/** Footer */
+.theme-dark div[class*="footer-"]
+{
+    background-color: var(--background-secondary);
+}
