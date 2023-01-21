@@ -1,0 +1,116 @@
+/**
+ * @name DarkCord
+ * @author emy
+ * @description A dark Discord theme
+ * @version 1.0.0
+ */
+
+/** Import theme */
+@import url('https://five.sh/archive/DarkCord.css?v=2');
+
+/** ROOT VARIABLES */
+:root
+{
+    /** Channel icon */
+    --channel-icon: #fff;
+
+    /** Title label */
+    --dd-titlebar-label-color: #656565;
+
+    /** Discord logo */
+    --dd-discord-logo-background: #262a3c;
+
+    /** Buttons */
+    --dd-button-main-color: #334fa5;
+    --dd-button-main-color-active: #3d5ec3;
+    --dd-button-disabled-color: #313131;
+
+    /** Danger buttons */
+    --dd-button-outline-danger-text: #ff4842;
+    --dd-button-outline-danger-text-hover: #fff;
+    --dd-button-outline-danger-text-active: #fff;
+    --dd-button-outline-danger-border: #ff4842;
+    --dd-button-outline-danger-border-hover: #ff4842;
+    --dd-button-outline-danger-border-active: #ff4842;
+    --dd-button-outline-danger-background: #ff2727;
+    --dd-button-outline-danger-background-hover: #ff2727;
+    --dd-button-outline-danger-background-active: #ff2727;
+
+    /** Danger status */
+    --dd-status-danger: #ff2727;
+
+    /** New messages */
+    --dd-new-messages-bar-background: #282452e8;
+
+    /** Sidebar unread messages */
+    --dd-sidebar-unread-messages-background: #ff00638a;
+
+    /** Typing indicator */
+    --dd-is-typing-color: #fff;
+
+    /** Message background (hover state) */
+    --dd-message-hover-background: rgb(23, 23, 37);
+
+    /** Embed colors */
+    --dd-embed-background: #161621;
+    --dd-embed-border-color: rgb(62, 52, 109);
+
+    /** Code blocks */
+    --dd-code-border-color: rgb(43, 58, 85);
+
+    /** Reaction buttons */
+    --dd-reaction-button-background: #1c1e35;
+    --dd-reaction-button-background-hover: #292d55;
+
+    /** Text area */
+    --dd-text-area-background: #191b25;
+
+    /** Blur intensity */
+    --dd-default-blur: 2px;
+    
+    /** Text colors */
+    --dd-primary-color: #dadada;
+    --dd-secondary-color: gold;
+    --dd-timestamp-color: rgb(150, 150, 150);
+    --dd-text-link: #5985ff;
+    --dd-text-link-low-saturation: #8ba8fa;
+
+    /** Border colors */
+    --dd-default-border-color: #191925;
+    --dd-message-input-border-color: #131419;
+
+    /** Separator between users in lists (friends list etc.) */
+    --dd-user-separator-color: #1a2135;
+
+    /** Alternate background */
+    --dd-alt-background: #0c0c0c;
+
+    /** Core background styling */
+    --dd-background-primary: #0f0f13;
+    --dd-background-secondary: #121318;
+    --dd-background-secondary-alt: #15161e;
+    --dd-background-tertiary: #0f0f13;
+
+    /** Floating colors */
+    --dd-background-accent: #d02c2c;
+    --dd-background-floating: #15161e;
+    --dd-background-nested-floating: #15161e;
+
+    /** Message mentioned colors */
+    --dd-background-mentioned: #15141b;
+    --dd-background-mentioned-hover: #15141b;
+
+    /** Chat colors */
+    --dd-chat-background: #0f0f13;
+    --dd-chat-border: #2b2b3a;
+    --dd-chat-input-container-background: #2b2b3a;
+
+    /** Selection colors */
+    --dd-background-modifier-hover: #27449e;
+    --dd-background-modifier-active: #27449e;
+    --dd-background-modifier-selected: #27449e;
+    --dd-background-modifier-accent: #2f344a;
+
+    /** Message hover color */
+    --dd-background-message-hover: #131318;
+}
