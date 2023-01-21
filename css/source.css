@@ -210,6 +210,7 @@ body
 /** Jump to present container */
 .theme-dark main > div[class^="messagesWrapper-"] div[class^="jumpToPresentBar-"]
 {
+    margin-bottom: 12px;
     border-radius: 8px;
     padding: 2px;
 }
