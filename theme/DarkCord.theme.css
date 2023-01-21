@@ -1,12 +1,12 @@
 /**
  * @name DarkCord
  * @author emy
- * @description A dark Discord theme
+ * @description An even darker version of the default dark theme
  * @version 1.0.0
  */
 
 /** Import theme */
-@import url('https://five.sh/archive/DarkCord.css?v=2');
+@import url('https://sixem.github.io/DarkCord/css/source.css');
 
 /** ROOT VARIABLES */
 :root
