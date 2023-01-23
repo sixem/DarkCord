@@ -42,6 +42,10 @@
     /** Danger status */
     --dd-status-danger: #ff2727;
 
+    /** Positive status */
+    --dd-status-positive-background: #2f7937;
+    --dd-status-positive-text: #fff;
+
     /** New messages */
     --dd-new-messages-bar-background: #282452e8;
 
@@ -50,9 +54,6 @@
 
     /** Typing indicator */
     --dd-is-typing-color: #fff;
-
-    /** Message background (hover state) */
-    --dd-message-hover-background: rgb(23, 23, 37);
 
     /** Embed colors */
     --dd-embed-background: #161621;
@@ -65,15 +66,16 @@
     --dd-reaction-button-background: #1c1e35;
     --dd-reaction-button-background-hover: #292d55;
 
+    /** Default blur intensity */
+    --dd-default-blur: 2px;
+
     /** Text area */
     --dd-text-area-background: #191b25;
-
-    /** Blur intensity */
-    --dd-default-blur: 2px;
     
     /** Text colors */
     --dd-primary-color: #dadada;
     --dd-secondary-color: gold;
+    --dd-activity-color: #d6d6d6;
     --dd-timestamp-color: rgb(150, 150, 150);
     --dd-text-link: #5985ff;
     --dd-text-link-low-saturation: #8ba8fa;
@@ -82,8 +84,9 @@
     --dd-default-border-color: #191925;
     --dd-message-input-border-color: #131419;
 
-    /** Separator between users in lists (friends list etc.) */
+    /** Separator colors */
     --dd-user-separator-color: #1a2135;
+    --dd-role-separator-color: #151821;
 
     /** Alternate background */
     --dd-alt-background: #0c0c0c;
@@ -108,12 +111,27 @@
     --dd-chat-border: #2b2b3a;
     --dd-chat-input-container-background: #2b2b3a;
 
+    /** Message background (hover state) */
+    --dd-message-hover-background: rgb(23, 23, 37);
+
+    /** Message hover color */
+    --dd-background-message-hover: #131318;
+
+    /** Member (sidebar) hover */
+    --dd-member-list-hover-color: #1e202b;
+
     /** Selection colors */
     --dd-background-modifier-hover: #27449e;
     --dd-background-modifier-active: #27449e;
     --dd-background-modifier-selected: #27449e;
-    --dd-background-modifier-accent: #2f344a;
+    --dd-background-modifier-accent: #1c2031;
 
-    /** Message hover color */
-    --dd-background-message-hover: #131318;
+    /** Text badge */
+    --dd-badge-text-color: #4261e8;
+
+    /** Icons */
+    --dd-guild-boosting-pink: #ff23c6;
+
+    /** Primary colors */
+    --dd-primary-dark-800: #161621;
 }

@@ -63,6 +63,10 @@ body
     /** Danger status */
     --status-danger: var(--dd-status-danger);
 
+    /** Positive status */
+    --status-positive-background: var(--dd-status-positive-background);
+    --status-positive-text: var(--dd-status-positive-text);
+
     /** Link colors */
     --text-link: var(--dd-text-link);
     --text-link-low-saturation: var(--dd-text-link-low-saturation);
@@ -78,6 +82,31 @@ body
     /** Text and input colors */
     --input-background: var(--dd-text-area-background);
     --channeltextarea-background: var(--dd-text-area-background);
+
+    /** Icons */
+    --guild-boosting-pink: var(--dd-guild-boosting-pink);
+
+    /** Primary colors */
+    --primary-dark-800: var(--dd-primary-dark-800);
+}
+
+/** Adds a new title text */
+.theme-dark div#app-mount::before
+{
+    content: 'DarkCord';
+    position: fixed;
+    top: 4px;
+    left: 12px;
+    color: var(--dd-titlebar-label-color);
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 1;
+}
+
+/** Hides the default Discord title */
+.theme-dark div[class*="titleBar-"] div:first-of-type > svg
+{
+    display: none;
 }
 
 /** Discord icon in top left corner */
@@ -130,18 +159,13 @@ body
     backdrop-filter: blur(var(--dd-default-blur));
 }
 
-/** Message timestamps and activitiy label below usernames */
+/** Message timestamps and activitiy labels */
 .theme-dark h3 > span[class^="timestamp-"] > time,
 .theme-dark div[class^="activityText-"]
 {
-    font-size: 0.8rem;
+    color: var(--dd-activity-color);
+    font-size: 12px;
     font-weight: italic;
-}
-
-/** Mesage timestamp */
-.theme-dark h3 > span[class^="timestamp-"] > time
-{
-    color: var(--dd-timestamp-color);
 }
 
 /** User area */
@@ -165,11 +189,13 @@ body
 }
 
 /** Left side bar unread container */
-.theme-dark div[class^="unreadTop"] > div:nth-child(1)
+.theme-dark div[class^="unreadTop"] > div:nth-child(1),
+.theme-dark div[class^="unreadBottom"] > div:nth-child(1)
 {
     background-color: var(--dd-sidebar-unread-messages-background);
     backdrop-filter: blur(var(--dd-default-blur));
     opacity: 1;
+    border-radius: 4px;
 }
 
 /** Embed wrapper (shared images, videos, URLs etc.) */
@@ -188,27 +214,8 @@ body
     padding-top: .65rem;
 }
 
-/** Hides the default Discord title */
-.theme-dark div[class*="titleBar-"] div:first-of-type > svg
-{
-    display: none;
-}
-
-/** Adds a new title text */
-.theme-dark div#app-mount::before
-{
-    content: 'DarkCord';
-    position: fixed;
-    top: 4px;
-    left: 12px;
-    color: var(--dd-titlebar-label-color);
-    font-weight: bold;
-    font-size: 12px;
-    z-index: 1;
-}
-
 /** Jump to present container */
-.theme-dark main > div[class^="messagesWrapper-"] div[class^="jumpToPresentBar-"]
+.theme-dark div[class^="jumpToPresentBar-"]
 {
     margin-bottom: 12px;
     border-radius: 8px;
@@ -284,4 +291,59 @@ body
 .theme-dark div[class*="footer-"]
 {
     background-color: var(--background-secondary);
+}
+
+/** Text badge (header), bot tags */
+.theme-dark div[class*="headerBarInner-"] > div[class^="textBadge-"],
+.theme-dark span[class^="botTag-"]
+{
+    background-color: var(--dd-badge-text-color) !important;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #000000b3;
+}
+
+/** Color replacements */
+.theme-dark [style="color: rgb(173, 20, 87);"]
+{
+    color: rgb(255 75 154) !important;
+}
+
+.theme-dark [style="color: rgb(128, 33, 180);"]
+{
+    color: rgb(185 90 236) !important;
+}
+
+.theme-dark [style="color: rgb(201, 28, 16);"]
+{
+    color: rgb(251 86 75) !important;
+}
+
+/** Group sidebar headers (roles, members etc.) */
+.theme-dark h2[class^="membersGroup-"],
+.theme-dark h3[class^="membersGroup-"]
+{
+    margin: 20px 0 4px 0;
+    text-align: left;
+    border-bottom: 1px solid var(--dd-role-separator-color);
+    padding: 8px 0 0px 6px;
+    height: 32px;
+    width: 100%;
+}
+
+.theme-dark h2[class^="membersGroup-"]:first-of-type,
+.theme-dark h3[class^="membersGroup-"]:first-of-type
+{
+    margin: 10px 0 4px 0;
+}
+
+/** Change direction of chat member container */
+.theme-dark div[class^="chat-"] > div[class^="content-"] > div[class^="container-"]
+{
+    flex-direction: row;
+}
+
+/** Members sidebar list (hover state) */
+.theme-dark div[role="list"] > div[class^="member-"]:hover > div:first-child
+{
+    background-color: var(--dd-member-list-hover-color);
 }
